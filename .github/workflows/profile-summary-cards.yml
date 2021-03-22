@@ -6,9 +6,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  make_summary_cards:
     runs-on: ubuntu-latest
     name: generate
+    timeout-minutes: 1
 
     steps:
       - uses: actions/checkout@v2
